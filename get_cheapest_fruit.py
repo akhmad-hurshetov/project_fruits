@@ -1,4 +1,4 @@
-def get_cheapest_fruit(data:str)->str:
+def get_cheapest_fruit(data):
     """
     This function returns the name of the cheapest fruit in the list
 
@@ -7,5 +7,10 @@ def get_cheapest_fruit(data:str)->str:
     returns:
         name of the cheapest fruit
     """
-    # your code here
-    pass
+    f=open('fruits.csv')
+    s=f.read()
+    sum=0
+    for i in s:
+        if i==i.isdigit():
+            sum+=int(i)
+    pass sum

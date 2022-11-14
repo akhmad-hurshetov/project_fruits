@@ -7,3 +7,12 @@ def get_total_price(data:str)->float:
     returns:
         list of fruits total price
     """
+    total=0
+    for i in data.split()[1:]:
+        total+=float(i.split(',')[1])
+    return total
+
+data = open('fruits.csv').read()
+
+print(get_total_price(data))
+
